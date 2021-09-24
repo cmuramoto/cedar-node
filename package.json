@@ -1,0 +1,27 @@
+{
+  "name": "@nxcd/cedar-node",
+  "version": "1.0.0",
+  "description": "Cedar trie",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmuramoto/cedar-node.git"
+  },
+  "keywords": [
+    "cedar",
+    "trie",
+    "nlp",
+    "search",
+    "index",
+    "tf-idf"
+  ],
+  "author": "cmuramoto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cmuramoto/cedar-node/issues"
+  },
+  "homepage": "https://github.com/cmuramoto/cedar-node#readme"
+}
