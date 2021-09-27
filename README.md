@@ -12,7 +12,7 @@ Even for node performance is pretty much OK, with ~1.8 million lookups/s with 10
 #### Basic
 
 ```node
-const cedar = new Cedar(true) // optional, false=encode keys in utf-8 before updates/lookups
+let cedar = new Cedar(true) // optional, false=encode keys in utf-8 before updates/lookups
 
 cedar.update('foo', 10)
 
@@ -23,16 +23,16 @@ cedar = new Cedar(true)
 // bulk update (keys will be mapped to corresponding indices)
 cedar.build(['foo', 'bar', 'roo'])
 
-cedar.lookup('bar') // {value: 10, from: ...}
+cedar.lookup('bar') // {value: 1, from: ...}
 
-cedar.erase('bar') // 10
+cedar.erase('bar') // 1
 
 cedar.lookup('bar') // null
 
-// keys is a stream, strings are created lazyly on demand 
+// keys is a stream, strings are created lazily on demand 
 [...cedar.keys()] // ['foo', 'roo']
 
-// values is a stream, numbers are created lazyly on demand 
+// values is a stream, numbers are created lazily on demand 
 [...cedar.values()] // [0, 2]
 
 ```
